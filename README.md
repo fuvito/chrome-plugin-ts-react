@@ -1,3 +1,31 @@
+# Chrome Plugin with TypeScript + React
+## Original Source
+https://www.luckymedia.dev/blog/how-to-create-a-chrome-extension-with-react-typescript-tailwindcss-and-vite-in-2024
+
+## Tasks
+- [x] create a new Vite project
+  npm create vite@latest chrome-plugin-ts -- --template react-ts
+  cd chrome-plugin-ts
+  npm install
+
+- [x] add tailwind (https://tailwindcss.com/docs/installation/using-vite)
+  npm install tailwindcss @tailwindcss/vite
+  npx tailwindcss init -p
+- [x] install crxjs
+  npm install @crxjs/vite-plugin -d
+- [x] follow steps in the document and install plugin run app
+- [x] do not forget cors problems in chrome:
+```json
+    "host_permissions": [
+        "http://localhost:5173/*"
+    ]
+```
+
+---
+
+# old readme
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
